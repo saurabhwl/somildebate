@@ -2,9 +2,9 @@ var express = require('express')
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-    host: "localhost",
-    user: "yourusername",
-    password: "yourpassword"
+    host: "mysqldbserver.mysql.database.azure.com",
+    user: "sonika@mysqldbserver",
+    password: "Somildebatedb123"
 });
 
 con.connect(function (err) {
