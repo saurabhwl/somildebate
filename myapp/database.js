@@ -3,7 +3,7 @@ var conn = mysql.createConnection({
     host: "mysqldbserver.mysql.database.azure.com",
     user: "sonika@mysqldbserver",
     password: "Somildebatedb123",
-    database: 'somildebatedb'
+    database: 'somildebmysql'
 });
 conn.connect(function (err) {
     if (err) throw err;
