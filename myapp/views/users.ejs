@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .user-detail {
+            height: 50vh;
+            border: 2px solid #f1f1f1;
+            padding: 16px;
+            background-color: white;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        button[type=submit] {
+            background-color: #434140;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            ;
+        }
+
+        button[type=submit]:hover {
+            background-color: #3d3c3c;
+        }
+
+        .banner {
+            background-color: rgb(223, 221, 230);
+            color: brown;
+            margin-top: 75px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #small-pic {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1> Debate Tutoring</h1>
+        <h1>By</h1>
+        <h1> Somil Agarwal</h1>
+        <img id="small-pic" src="./images/somil.jpeg" alt="">
+        <h2>UNIVERSITY OF CHICAGO </h2>
+        <h3>
+            <p>1st place @ NJ State Championship. PF Team Captain @ Millburn HS.</p>
+            Placed top 5 @ Harvard Tournament. Ranked top 20 in the US in 2019.
+        </h3>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <!--====form section start====-->
+    <div class="user-detail">
+        <h2>Contact Us</h2>
+        <form action="/users/create" method="POST">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter Email Address" name="email" required>
+            <label>Message</label>
+            <input type="textarea" placeholder="Enter Message" name="message" rows="3" required>
+            <button type="submit">Submit</button>
+    </div>
+    </div>
+    <!--====form section start====-->
+</body>
+
+</html>
