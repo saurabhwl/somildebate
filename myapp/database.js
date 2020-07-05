@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 var conn = mysql.createConnection({
-    host: "mysqldbserver.mysql.database.azure.com",
-    user: "sonika@mysqldbserver",
+    host: "somildebate-mysqldb.mysql.database.azure.com",
+    user: "sonika@somildebate-mysqldb",
     password: "Somildebatedb123",
     database: 'somildebmysql'
 });
